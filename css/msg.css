@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.lag-content {
+  width: 90%;
+  margin: auto;
+  height: 300px;
+  background-color: #292929; }
+  .lag-content::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .lag-content .lag-pic {
+    float: left;
+    border: 1px solid #EFEFEF;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .lag-content .lag-pic::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .lag-content .lag-pic .lag-pic-img {
+      width: 80%; }
+      .lag-content .lag-pic .lag-pic-img span {
+        display: block;
+        padding-top: 100%;
+        overflow: hidden;
+        position: relative; }
+        .lag-content .lag-pic .lag-pic-img span img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+  .lag-content .lag-val {
+    float: right;
+    width: calc(100% - 200px);
+    height: 15%;
+    border: 1px solid #EFEFEF;
+    display: flex;
+    flex-direction: row; }
+    .lag-content .lag-val::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .lag-content .lag-val .lag-id {
+      height: 100%;
+      width: 150px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #EFEFEF; }
+    .lag-content .lag-val .lag-time {
+      height: 100%;
+      width: 150px;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #EFEFEF; }
+  .lag-content .lag-ent {
+    float: right;
+    width: calc(100% - 200px);
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .lag-content .lag-ent::after {
+      content: "";
+      clear: both;
+      display: table; }
+    .lag-content .lag-ent .ent-content {
+      width: 90%;
+      height: 80%;
+      outline: none;
+      border: none;
+      padding: 20px 25px;
+      font-size: 16px;
+      color: #EFEFEF;
+      letter-spacing: 1px; }
+
+.lag-type {
+  padding: 3% 0;
+  width: 90%;
+  margin: auto;
+  background-color: #292929;
+  display: block; }
+  .lag-type .lag-type-content {
+    width: 80%;
+    height: 100px;
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    line-height: 2;
+    padding: 5px;
+    resize: none; }
+  .lag-type .lag-type-btn {
+    display: block;
+    position: relative;
+    position: relative;
+    left: 90%;
+    transform: translateX(-100%);
+    margin-top: 8px;
+    width: 70px;
+    height: auto;
+    line-height: 2;
+    padding: 5px;
+    background-color: #883030;
+    color: #EFEFEF;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    outline: none; }
+    .lag-type .lag-type-btn:hover {
+      background-color: #C2AA6C; }
+
+@media all and (max-width: 767px) {
+  .lag-content {
+    height: auto;
+    max-width: 550px; }
+    .lag-content .lag-pic {
+      width: 50%;
+      min-height: 200px; }
+    .lag-content .lag-val {
+      width: 50%;
+      height: 100px;
+      min-height: 200px;
+      flex-direction: column-reverse;
+      border: none; }
+      .lag-content .lag-val .lag-id {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #EFEFEF; }
+      .lag-content .lag-val .lag-time {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #EFEFEF; }
+    .lag-content .lag-ent {
+      float: left;
+      width: 100%;
+      height: 300px; }
+      .lag-content .lag-ent .ent-content {
+        border: 1px solid #EFEFEF; } }
